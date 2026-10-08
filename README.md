@@ -24,28 +24,32 @@ Common generated-UI failures include:
 - desktop layouts that simply shrink instead of adapting;
 - generated illustrations that look pasted onto the product;
 - inconsistent component states;
-- color used without semantic meaning.
+- color used without semantic meaning;
+- generic startup art direction that could belong to hundreds of unrelated products;
+- fake live indicators, fake proof, decorative hero pills, and other AI-template filler.
 
 Design Skills treats these as system problems, not isolated styling mistakes.
 
 ## Skills
 
-### Structure and hierarchy
+### Structure, flow, and hierarchy
 
 - [`visual-hierarchy.md`](visual-hierarchy.md) — priority, emphasis, reading order, action hierarchy, density, and anti-patterns.
 - [`information-architecture.md`](information-architecture.md) — mental models, categories, navigation, information scent, search, taxonomy, orientation, and IA testing.
+- [`user-flow-and-navigation.md`](user-flow-and-navigation.md) — task flow, navigation levels, progressive decisions, orientation, feedback, recovery, focus order, and consequence-based friction.
 - [`progressive-disclosure.md`](progressive-disclosure.md) — deciding what is visible first, what can be deferred, and which disclosure mechanism fits the task.
 - [`content-chunking.md`](content-chunking.md) — semantic chunks, headings, proximity, lists, forms, tables, dashboards, and avoiding card soup.
 - [`functional-grouping.md`](functional-grouping.md) — grouping controls and content according to task, scope, Gestalt principles, and user mental models.
 - [`nested-structural-layouts.md`](nested-structural-layouts.md) — app → workspace → page → panel → component hierarchy without endless nested containers.
 
-### Space, alignment, scale, and attention
+### Space, alignment, scale, color, and attention
 
 - [`spatial-hierarchy-prospacing.md`](spatial-hierarchy-prospacing.md) — spacing systems, density, internal/external space, component rhythm, and optical correction.
 - [`proximity-and-whitespace-distribution.md`](proximity-and-whitespace-distribution.md) — relationship-first spacing, whitespace, density modes, forms, lists, tables, and text expansion.
 - [`alignment-and-grid-structures.md`](alignment-and-grid-structures.md) — key lines, columns, gutters, margins, baseline alignment, responsive grids, and cross-screen continuity.
 - [`contrast-and-scale.md`](contrast-and-scale.md) — size, weight, luminance, density, action contrast, target sizing, and restrained visual prominence.
 - [`color-weight-and-dominance.md`](color-weight-and-dominance.md) — semantic color, brand-color restraint, status colors, surfaces, dark mode, high contrast, and data visualization.
+- [`color-theory-and-palette.md`](color-theory-and-palette.md) — hue, chroma, lightness, harmony, palette construction, semantic roles, dark mode, accessibility, and why some shades work better than others.
 - [`focus-and-attention-mapping.md`](focus-and-attention-mapping.md) — focal points, attention budget, competing cues, motion, imagery, errors, and keyboard focus.
 - [`scannability-fields.md`](scannability-fields.md) — scan anchors, leading edges, headings, repeated anatomy, tables, forms, navigation, and search results.
 - [`reading-patterns.md`](reading-patterns.md) — F-shaped, layer-cake, spotted, commitment, and Z-flow scanning without treating them as rigid templates.
@@ -62,6 +66,12 @@ Design Skills treats these as system problems, not isolated styling mistakes.
 - [`responsive-adaptation.md`](responsive-adaptation.md) — content-driven breakpoints, structural transformations, responsive grids, navigation, tables, forms, dialogs, zoom, and localization.
 - [`accessibility-and-interaction.md`](accessibility-and-interaction.md) — semantic structure, keyboard access, focus, contrast, target size, zoom, text spacing, reflow, forms, status messages, reduced motion, and high-contrast modes.
 - [`motion-and-feedback.md`](motion-and-feedback.md) — transitions, progress, loading, skeletons, optimistic UI, drag feedback, AI activity, reduced motion, and performance.
+
+### Art direction, personality, and anti-slop enforcement
+
+- [`visual-art-direction.md`](visual-art-direction.md) — product character, composition, typography personality, shape language, imagery, density, motion, signature decisions, and anti-template art direction.
+- [`anti-ai-slop.md`](anti-ai-slop.md) — 100 enforceable rules against generic generated-UI defaults, fake proof, decorative filler, excessive pills, glows, cards, gradients, weak copy, and trend imitation.
+- [`interface-quality-gate.md`](interface-quality-gate.md) — final PASS / PASS WITH FIXES / FAIL review across truth, flow, IA, hierarchy, accessibility, layout, type, color, components, identity, responsive behavior, motion, and anti-slop restraint.
 
 ### Generated visual assets
 
@@ -100,6 +110,8 @@ Design relationships before decoration.
 
 Use hierarchy, proximity, alignment, typography, spacing, contrast, semantic color, clear language, familiar behavior, and restrained geometry to communicate structure.
 
+Then give the product a deliberate visual character through a small number of coherent decisions in type, density, color, shape, imagery, motion, and voice.
+
 Prefer the least visually heavy mechanism that solves the problem:
 
 1. semantic structure;
@@ -110,7 +122,7 @@ Prefer the least visually heavy mechanism that solves the problem:
 6. subtle surface or divider;
 7. full container/elevation only when the interface actually needs it.
 
-A professional interface should not need every element to be large, bold, rounded, shadowed, saturated, or placed inside a card.
+A professional interface should not need every element to be large, bold, rounded, shadowed, saturated, animated, or placed inside a card.
 
 ## How an AI should use the pack
 
@@ -121,9 +133,12 @@ Examples:
 - building a dashboard: visual hierarchy + spacing + grid + scannability + component craft + accessibility;
 - designing a settings screen: IA + grouping + progressive disclosure + typography + component craft;
 - building a responsive product shell: nested layouts + grid + responsive adaptation + accessibility;
-- creating a landing hero: hierarchy + typography + reading patterns + attention mapping + asset generation;
+- creating a landing hero: visual art direction + hierarchy + typography + reading patterns + attention mapping + anti-AI-slop;
 - building a component library: component craft + tokens/theming + typography + spacing + accessibility;
-- generating custom product visuals: asset generation + color dominance + hierarchy + motion when animated.
+- generating custom product visuals: asset generation + color dominance + art direction + motion when animated;
+- building a brand palette: color theory + color dominance + tokens/theming + accessibility;
+- designing onboarding or checkout: user flow + IA + progressive disclosure + feedback + accessibility;
+- reviewing generated UI before shipping: interface quality gate + anti-AI-slop + the underlying skills for any failed category.
 
 The final design should reconcile the selected skills into one system rather than applying each rule independently.
 
