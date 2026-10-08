@@ -6,6 +6,12 @@ Design Skills is built to help an AI produce interfaces that feel deliberately d
 
 The files stay flat at the repository root so an agent, designer, or developer can load only the guidance relevant to the current task without digging through nested folders.
 
+## Start here
+
+- [`design-orchestrator.md`](design-orchestrator.md) — **master skill and single entry point.** Load this first. It inspects the task, routes work through the relevant specialist skills, defines the execution order, resolves conflicts, keeps anti-AI-slop enforcement active, and runs the final quality gate. It also includes a full-system mode that references the entire repository for complete design passes.
+
+If an AI or agent can only be told to use one skill from this repository, tell it to use `design-orchestrator.md`.
+
 ## What this pack is trying to prevent
 
 Common generated-UI failures include:
@@ -126,7 +132,7 @@ A professional interface should not need every element to be large, bold, rounde
 
 ## How an AI should use the pack
 
-Do not load every skill blindly for every task. Select the files that match the design problem.
+Start with `design-orchestrator.md`. It will choose targeted mode or full-system mode and route the task through the correct specialist files.
 
 Examples:
 
