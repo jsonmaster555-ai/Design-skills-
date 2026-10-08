@@ -22,9 +22,9 @@ Design Skills focuses on hierarchy, typography, spacing, information architectur
 - Focus & Attention Mapping
 - Proximity & Whitespace Distribution
 - Scannability Fields
-- Component Design
+- Component Craft
 
-Each skill is an individual Markdown file so agents can load only the guidance relevant to the current design problem.
+Each skill is an individual Markdown file at the repository root so agents can load only the guidance relevant to the current design problem without navigating a deep folder structure.
 
 ## Design philosophy
 
@@ -32,4 +32,4 @@ Design relationships before decoration. Use hierarchy, proximity, alignment, typ
 
 ## References
 
-Guidance is informed by established interface-design systems and usability research including Apple Human Interface Guidelines, Material Design, Microsoft Fluent, IBM Carbon, and Nielsen Norman Group research. Individual skills can include more specific references where relevant.
+Guidance is informed by established interface-design systems and usability research including Apple Human Interface Guidelines, Material Design, Microsoft Fluent, IBM Carbon, Nielsen Norman Group research, and W3C/WCAG accessibility guidance.
